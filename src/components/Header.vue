@@ -6,9 +6,9 @@
 
       <!-- Menu -->
       <nav class="space-x-6">
-        <a href="#" class="text-blue-700 hover:text-blue-950 font-semibold">Home</a>
-        <a href="#" class="text-blue-700 hover:text-blue-950 font-semibold">Sobre</a>
-        <a href="#" class="text-blue-700 hover:text-blue-950 font-semibold">Blog</a>
+        <RouterLink to="/" class="text-blue-700 hover:text-blue-950 font-semibold">
+          Home
+        </RouterLink>    
       </nav>
 
       <!-- Botão WhatsApp -->
@@ -32,12 +32,5 @@
       </a>
     </div>
   </header>
-</template>
+  </template>
 
-<script setup lang="ts">
-
-</script>
-
-<style scoped>
-
-</style>
