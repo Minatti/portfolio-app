@@ -1,12 +1,16 @@
 <template>
-  <header class="shadow-md">
+  <header class="bg-blue-950 shadow-md">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <!-- Logo -->
-      <h1 class="text-2xl font-bold text-back">Empresa XPTO</h1>
+      <h1 class="text-2xl font-bold text-white">Empresa XPTO</h1>
 
       <!-- Menu -->
       <nav class="space-x-6">
-        <RouterLink to="/" class="text-blue-700 hover:text-blue-950 font-semibold">
+        <RouterLink 
+          to="/" 
+          class="text-gray-100
+                 hover:text-white 
+                 font-semibold">
           Home
         </RouterLink>    
       </nav>
