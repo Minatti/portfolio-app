@@ -12,7 +12,8 @@
                  hover:text-white 
                  font-semibold">
           Home
-        </RouterLink>    
+        </RouterLink>
+        <a href="#sobre" class="text-gray-100 hover:text-white font-semibold">Sobre</a>   
       </nav>
 
       <!-- Botão WhatsApp -->
