@@ -15,6 +15,13 @@
         </RouterLink>
         <a href="#sobre" class="text-gray-100 hover:text-white font-semibold">Sobre</a>
         <a href="#servicos" class="text-gray-100 hover:text-white font-semibold">Serviços</a>   
+        <RouterLink 
+          to="/blog" 
+          class="text-gray-100
+                 hover:text-white 
+                 font-semibold">
+          Blog
+        </RouterLink>
       </nav>
 
       <!-- Botão WhatsApp -->
