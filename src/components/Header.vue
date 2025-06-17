@@ -13,8 +13,20 @@
                  font-semibold">
           Home
         </RouterLink>
-        <a href="#sobre" class="text-gray-100 hover:text-white font-semibold">Sobre</a>
-        <a href="#servicos" class="text-gray-100 hover:text-white font-semibold">Serviços</a>   
+        <RouterLink 
+          to="/sobre" 
+          class="text-gray-100
+                 hover:text-white 
+                 font-semibold">
+          Sobre
+        </RouterLink>
+        <RouterLink 
+          to="/servicos" 
+          class="text-gray-100
+                 hover:text-white 
+                 font-semibold">
+          Serviços
+        </RouterLink>                
         <RouterLink 
           to="/blog" 
           class="text-gray-100

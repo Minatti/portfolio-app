@@ -1,8 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from 'pages/Home.vue';
+import Main from '@/pages/Main.vue';
+import Sobre from '@/components/Sobre.vue';
+import Servicos from '@/components/Servicos.vue'
+import Blog from '@/pages/Blog.vue';
+
 
 const routes = [
-  { path: '/', name: 'Home', component: Home },
+  { 
+    path: '/', name: 'Main', component: Main 
+  },
+  {
+    path: '/sobre', name: 'Sobre', component: Sobre
+  },
+  {
+    path: '/servicos', name: 'Servicos', component: Servicos
+  },
+  {
+    path: '/blog', name: 'Blog', component: Blog
+  }
 ];
 
 export const router = createRouter({
