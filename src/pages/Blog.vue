@@ -1,6 +1,5 @@
 <script setup lang="ts">
 
-
 </script>
 <template>
   <section class="max-w-4xl mx-auto px-4 py-8">
