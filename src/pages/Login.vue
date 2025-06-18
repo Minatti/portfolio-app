@@ -1,27 +1,34 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { loginUser } from '@/auth/authLogin';
 
-const email = ref('');
-const password = ref('');
-const errorMessage = ref('');
-const router = useRouter();
-
-// Simula um login simples modo chinelão
-function login() {
-  if (!email.value || !password.value) {
-    errorMessage.value = 'Preencha todos os campos.';
-    return;
-  }
-
-  // Autenticação simples para exemplo (substituir por chamada real depois)
-  if (email.value === 'admin@jedi' && password.value === '1234') {
-    sessionStorage.setItem('logged', 'true');
-    router.push('/blog'); // Redireciona para a rota protegida
-  } else {
-    errorMessage.value = 'Email ou senha inválidos.';
-  }
+interface Credentials {
+  email: string;
+  password: string;
 }
+
+const credentials = ref<Credentials>({
+  email: '',
+  password: ''
+});
+
+const router = useRouter();
+const errorMessage = ref('');
+
+const login = () => {
+  const { email, password } = credentials.value;
+
+  // Simples validação mock
+  email === 'admin@jedi' && password === '1234'
+    ? (
+      errorMessage.value = '',
+      loginUser(), 
+      router.push('/blog')
+    )
+    : errorMessage.value = 'Credenciais inválidas. Verifique seu e-mail e senha.';
+};
+
 </script>
 
 <template>
@@ -33,7 +40,7 @@ function login() {
         <div>
           <label class="block text-sm font-medium text-gray-700">Email</label>
           <input
-            v-model="email"
+            v-model="credentials.email"
             type="email"
             placeholder="Digite seu e-mail"
             class="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-500"
@@ -43,7 +50,7 @@ function login() {
         <div>
           <label class="block text-sm font-medium text-gray-700">Senha</label>
           <input
-            v-model="password"
+            v-model="credentials.password"
             type="password"
             placeholder="Digite sua senha"
             class="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-500"

@@ -1,3 +1,17 @@
+<script setup lang="ts">
+import { RouterLink, useRouter } from 'vue-router';
+import { authState, loginUser, logoutUser } from '@/auth/authLogin';
+
+const router = useRouter();
+
+const logout = () => {
+  logoutUser();
+  router.push('/login');
+};
+
+
+
+</script>
 <template>
   <header class="bg-blue-950 shadow-md">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -27,15 +41,31 @@
                  font-semibold">
           Serviços
         </RouterLink>                
-        <RouterLink 
+        <RouterLink
+          v-if="authState.isLoggedIn" 
           to="/blog" 
           class="text-gray-100
                  hover:text-white 
                  font-semibold">
           Blog
         </RouterLink>
+        <RouterLink
+         v-if="!authState.isLoggedIn"
+          to="/login" 
+          class="text-gray-100
+                 hover:text-white 
+                 font-semibold">
+          Login
+        </RouterLink>        
       </nav>
-
+      <!-- botão logout/sair -->
+      <button
+        v-if="authState.isLoggedIn"
+        @click="logout"
+        class="bg-red-500 text-white px-3 py-1 rounded"
+      >
+        Sair
+      </button>       
       <!-- Botão WhatsApp -->
       <a
         href="https://wa.me/#"

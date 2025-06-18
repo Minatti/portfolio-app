@@ -1,11 +1,17 @@
 <script setup lang="ts">
 import Header from '@/components/Header.vue';
-import { RouterView } from 'vue-router';
+import { useRoute, RouterView } from 'vue-router';
+
+const route = useRoute();
+const noHeaderRoutes = ['/login']; 
+
 </script>
 
 <template>
   <div class="min-h-screen flex flex-col">
-    <Header></Header>
+    <Header v-if="!noHeaderRoutes.includes(route.path)">
+
+    </Header>
     <main class="flex-grow p-4">
       <RouterView />
     </main>
