@@ -21,11 +21,24 @@ const routes = [
     path: '/login', name: 'Login', component: Login
   },
   {
-    path: '/blog', name: 'Blog', component: Blog
+    path: '/blog', 
+    name: 'Blog', 
+    component: Blog,
+    meta: { requiresAuth: true}
   }
 ];
 
 export const router = createRouter({
   history: createWebHistory(),
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  const isAuthenticated = sessionStorage.getItem('isLoggedIn') === 'true';
+
+  // Verifica se a rota exige autenticação
+  to.meta.requiresAuth && !isAuthenticated 
+  ? next('/login') 
+  : next();
+  
 });
