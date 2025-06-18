@@ -45,15 +45,15 @@ const year = new Date().getFullYear()
         <h3 class="text-lg font-semibold text-white mb-2">Redes Sociais</h3>
         <div class="flex space-x-4 mt-2">
           <!-- LinkedIn -->
-          <a href="https://linkedin.com" target="_blank" class="hover:text-white">
+          <a href="https://linkedin.com" target="_blank" class="hover:text-white hover:opacity-80">
             <img src="../assets/icons/linkedin.png" alt="LinkedIn" class="w-6 h-6"/>
           </a>
           <!-- Instagram -->
-          <a href="https://instagram.com" target="_blank" class="hover:text-white">
+          <a href="https://instagram.com" target="_blank" class="hover:text-white hover:opacity-80">
             <img src="../assets/icons/instagram.png" alt="Instagram" class="w-6 h-6"/>
           </a>
           <!-- YouTube -->
-          <a href="https://youtube.com" target="_blank" class="hover:text-white">
+          <a href="https://youtube.com" target="_blank" class="hover:text-white hover:opacity-80">
             <img src="../assets/icons/youtube.png" alt="YouTube" class="w-6 h-6"/>
           </a>
         </div>
