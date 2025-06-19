@@ -35,8 +35,8 @@ const year = new Date().getFullYear()
       <!-- Contato -->
       <div>
         <h3 class="text-lg font-semibold text-white mb-2">Contato</h3>
-        <p class="text-sm">📍 Rua Kazordoon, 123 - Honbra</p>
-        <p class="text-sm">📞 (11) 91234-5678</p>
+        <p class="text-sm">📍 Depot Kazordoon - Honbra</p>
+        <p class="text-sm">📞 (51) 91234-5678</p>
         <p class="text-sm">🕒 Seg a Sex: 08:00 às 18:00</p>
       </div>
 

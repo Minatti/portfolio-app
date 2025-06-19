@@ -3,10 +3,15 @@
   import Servicos from '@/components/Servicos.vue';
 </script>
 <template>
-  <section id="sobre" class="mb-8 p-4 bg-yellow-100 border border-yellow-400 text-yellow-900">
+  <section id="#inicio" class="mt-10 p-4">
+      <div>
+        <p>Inicio</p>
+      </div>
+  </section>
+  <section id="#sobre" class="mt-10 p-4">
     <Sobre />
   </section>
-  <section id="servicos" class="p-4 bg-blue-100 border border-gray-400 text-cyan-900">
+  <section id="#servicos" class="mt-10 p-4">
     <Servicos />
   </section>
 </template>

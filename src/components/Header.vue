@@ -16,7 +16,7 @@ const logout = () => {
   <header class="bg-blue-950 shadow-md">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <!-- Logo -->
-      <h1 class="text-2xl font-bold text-white">Empresa XPTO</h1>
+      <h1 class="text-2xl font-bold text-white">XPTO Digital</h1>
 
       <!-- Menu -->
       <nav class="space-x-6">
@@ -24,21 +24,21 @@ const logout = () => {
           to="/" 
           class="text-gray-100
                  hover:text-white 
-                 font-semibold">
-          Home
+                 font-semibold hover:underline">
+          Início
         </RouterLink>
         <RouterLink 
           to="/sobre" 
           class="text-gray-100
                  hover:text-white 
-                 font-semibold">
+                 font-semibold hover:underline">
           Sobre
         </RouterLink>
         <RouterLink 
           to="/servicos" 
           class="text-gray-100
                  hover:text-white 
-                 font-semibold">
+                 font-semibold hover:underline">
           Serviços
         </RouterLink>                
         <RouterLink
@@ -46,7 +46,7 @@ const logout = () => {
           to="/blog" 
           class="text-gray-100
                  hover:text-white 
-                 font-semibold">
+                 font-semibold hover:underline">
           Blog
         </RouterLink>
         <RouterLink
@@ -54,24 +54,17 @@ const logout = () => {
           to="/login" 
           class="text-gray-100
                  hover:text-white 
-                 font-semibold">
+                 font-semibold hover:underline">
           Login
         </RouterLink>        
       </nav>
-      <!-- botão logout/sair -->
-      <button
-        v-if="authState.isLoggedIn"
-        @click="logout"
-        class="bg-red-500 text-white px-3 py-1 rounded"
-      >
-        Sair
-      </button>       
-      <!-- Botão WhatsApp -->
+      <div id="menu-right" class="px-4 py-4 flex justify-around items-center">
+     <!-- Botão WhatsApp -->
       <a
         href="https://wa.me/#"
         target="_blank"
         rel="noopener"
-        class="flex items-center px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition"
+        class="flex items-center px-4 py-2 ml-5 pl-5 bg-neutral-100 text-blue-950 rounded-md hover:text-white hover:bg-green-500 transition"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +77,16 @@ const logout = () => {
           />
         </svg>
         Entre em Contato
-      </a>
+      </a>        
+      <!-- botão logout/sair -->
+      <button
+        v-if="authState.isLoggedIn"
+        @click="logout"
+        class="bg-neutral-100 text-blue-900 px-3 py-1 rounded-md ml-8 hover:bg-red-500 hover:text-white transition"
+      >
+        Sair
+      </button>   
+      </div>    
     </div>
   </header>
   </template>
