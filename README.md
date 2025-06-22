@@ -4,7 +4,7 @@
 
 Este projeto de desenvolvimento é um site de portfólio para profissionais que buscam apresentar sua empresa digital e criar conteúdos de valor para atrair clientes, compartilhando diversos conteúdos de conhecimentos dentro do seu segmento que for. Tem como objetivo ser um produto mínimo viável, sendo a versão mais básica colocado a prova de testes e coleta de feedbacks inicialmente.
 
-Explicando um pouco na prática: A aplicação de página única (SPA), consome o serviço de uma aplicação chamada blog-api que é um MVP também mas sua atuação é no backend ao invés de ser no frontend, em termos de fluxo, podemos dizer que acontece do lado do servidor e não do navegador, simples assim. 
+Explicando um pouco na prática a comunicação FRONT x BACK: A aplicação de página única (SPA), consome o serviço de uma aplicação chamada blog-api que é um MVP também mas sua atuação é no backend ao invés de ser no frontend, em termos de fluxo, podemos dizer que acontece do lado do servidor e não do navegador, simples assim. 
 
 A API trás as funcionalidades de gerenciar, criar, publicar postagens, podendo realizar em termos técnicos as operações de CRUD, como criar novos artigos e notícias do segmento e por fim gerenciá-los.
 
