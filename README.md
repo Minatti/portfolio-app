@@ -8,7 +8,7 @@ Explicando um pouco na prática a comunicação FRONT x BACK: A aplicação de p
 
 A API trás as funcionalidades de gerenciar, criar, publicar postagens, podendo realizar em termos técnicos as operações de CRUD, como criar novos artigos e notícias do segmento e por fim gerenciá-los.
 
-Projeto desenvolvido como trabalho da disciplina ##Imersão Profissional: Implementação de uma Aplicação
+Projeto desenvolvido como trabalho da disciplina ## Imersão Profissional: Implementação de uma Aplicação
 ## Ensino Superior IERGS UNIASSELVI
 
 Stack do Projeto no front-end: (VueJS+Typescript+Tailwindcss)
