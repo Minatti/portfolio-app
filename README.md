@@ -1,14 +1,19 @@
-# hello-world
+# Portfólio APP: Utilizando a abordagem de Aplicação de Página Única (SPA)
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+## Resumo
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Este projeto de desenvolvimento é um site de portfólio para profissionais que buscam apresentar sua empresa digital e criar conteúdos de valor para atrair clientes, compartilhando diversos conteúdos de conhecimentos dentro do seu segmento que for. Tem como objetivo ser um produto mínimo viável, sendo a versão mais básica colocado a prova de testes e coleta de feedbacks inicialmente.
 
-## Type Support for `.vue` Imports in TS
+Explicando um pouco na prática: A aplicação de página única (SPA), consome o serviço de uma aplicação chamada blog-api que é um MVP também mas sua atuação é no backend ao invés de ser no frontend, em termos de fluxo, podemos dizer que acontece do lado do servidor e não do navegador, simples assim. A API trás as funcionalidades de gerenciamento de conteúdos, podendo realizar em termos técnicos as operações de CRUD, como criar novos artigos e notícias do segmento e por fim gerenciá-los.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+Projeto desenvolvido como trabalho de disciplina do [Ensino Superior IERGS UNIASSELVI] - [Imersão Profissional: Implementação de uma Aplicação] 
+
+Stack do Projeto no front-end: [VueJS+Typescript+Tailwindcss]
+
+## Meu Setup
+
+Carregando ...
 
 ## Customize configuration
 
