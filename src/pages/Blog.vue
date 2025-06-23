@@ -1,4 +1,13 @@
 <script setup lang="ts">
+import { API_URL } from '@/api/config'
+import { ref, onMounted } from 'vue';
+import { getPosts } from '@/services/postService';
+
+const posts = ref<Post[]>([]);
+
+onMounted(async () => {
+  posts.value = await getPosts();
+});
 
 </script>
 <template>
@@ -7,9 +16,20 @@
     <p class="text-gray-600 mb-8">Artigos e novidades sobre tecnologia e projetos.</p>
     <!-- Exemplo de conteúdo -->
     <div class="space-y-4">
+      <h1 class="text-2xl font-bold mb-4">Posts</h1>
       <article class="bg-white shadow p-4 rounded-lg hover:shadow-lg transition">
-        <h2 class="text-2xl font-semibold text-blue-700">Como montamos esse portfólio</h2>
-        <p class="text-gray-700">Veja como organizamos as rotas, componentes e estilos usando Vue 3 + Tailwind.</p>
+        <ul>
+          <li v-for="post in posts" :key="post.id" class="mb-4">
+             <h2 class="text-2xl font-semibold text-blue-700">
+                {{ post.titulo }}
+            </h2>
+            <p>{{ post.conteudo }}</p>
+            <small class="text-gray-500">
+                  {{ post.autor }} - Criado em 
+                  {{ new Date(post.data_criacao).toLocaleDateString() }}
+            </small>
+          </li>          
+        </ul>
       </article>
     </div>
   </section>
