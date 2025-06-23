@@ -2,8 +2,8 @@
 
 ## Resumo do projeto
 
-Projeto desenvolvido como trabalho da disciplina **Imersão Profissional: Implementação de uma Aplicação** <br>
-**Ensino Superior IERGS UNIASSELVI**
+Projeto desenvolvido como trabalho da disciplina *Imersão Profissional: Implementação de uma Aplicação* <br>
+**Ensino Superior IERGS Uniasselvi**
 
 Este projeto de desenvolvimento é um site de portfólio para profissionais que buscam apresentar sua empresa digital e criar conteúdos de valor para atrair clientes, compartilhando diversos conteúdos de conhecimentos dentro do seu segmento que for. Tem como objetivo ser um produto mínimo viável, sendo a versão mais básica colocado a prova de testes e coleta de feedbacks inicialmente.
 
@@ -14,8 +14,8 @@ A API trás as funcionalidades de gerenciar, criar, publicar postagens, podendo 
 
 ## Stack do Projeto no front-end: 
 
-*VueJS*
-*Typescript*
+*VueJS* <br>
+*Typescript* <br>
 *Tailwindcss*
 
 ## Meu Setup
