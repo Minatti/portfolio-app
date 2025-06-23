@@ -17,9 +17,9 @@ onMounted(async () => {
     <!-- Exemplo de conteúdo -->
     <div class="space-y-4">
       <h1 class="text-2xl font-bold mb-4">Posts</h1>
-      <article class="bg-white shadow p-4 rounded-lg hover:shadow-lg transition">
+      <article>
         <ul>
-          <li v-for="post in posts" :key="post.id" class="mb-4">
+          <li v-for="post in posts" :key="post.id" class="mb-4 border-l-4 px-10 border-blue-700 bg-white shadow p-4 rounded-lg hover:shadow-lg transition">
              <h2 class="text-2xl font-semibold text-blue-700">
                 {{ post.titulo }}
             </h2>
@@ -28,6 +28,7 @@ onMounted(async () => {
                   {{ post.autor }} - Criado em 
                   {{ new Date(post.data_criacao).toLocaleDateString() }}
             </small>
+            <p> <a href="#">leia mais...</a> </p>
           </li>          
         </ul>
       </article>
