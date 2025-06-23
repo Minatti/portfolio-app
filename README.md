@@ -1,4 +1,6 @@
-# Portfólio APP: *Utilizando a abordagem de Aplicação de Página Única (SPA)*
+# Portfólio APP: 
+
+*Utilizando a abordagem de Aplicação de Página Única (SPA)*
 
 ## Resumo do projeto
 
