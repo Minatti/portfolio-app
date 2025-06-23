@@ -4,7 +4,7 @@
 
 ## Resumo do projeto
 
-Projeto desenvolvido como trabalho da disciplina *Imersão Profissional: Implementação de uma Aplicação* do<br>
+Projeto desenvolvido como trabalho da disciplina **Imersão Profissional: Implementação de uma Aplicação** do<br>
 **Ensino Superior IERGS Uniasselvi**
 
 Este projeto de desenvolvimento é um site de portfólio para profissionais que buscam apresentar sua empresa digital e criar conteúdos de valor para atrair clientes, compartilhando diversos conteúdos de conhecimentos dentro do seu segmento. Tem como objetivo ser um produto mínimo viável, sendo a versão mais básica colocado a prova de testes e coleta de feedbacks inicialmente.
@@ -16,6 +16,7 @@ A API Restful contêm as funcionalidades de gerenciar, criar, publicar postagens
 
 ## Stack do Projeto no front-end: 
 
+*Vite* <br>
 *VueJS* <br>
 *Typescript* <br>
 *Tailwindcss*
